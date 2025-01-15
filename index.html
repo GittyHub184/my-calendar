@@ -6,17 +6,19 @@
     <title>Google Kalender Veckovy</title>
     <style>
         /* Stil för kalenderns container */
-        .calendar-container {
-            max-width: 100%;
-            overflow: hidden;
-            position: relative;
+         .calendar-container {
+            width: 100%;  /* Gör containern responsiv */
+            max-width: 100%;  /* Säkerställer att containern inte går utanför bredden */
+            margin: 0 auto;  /* Centrerar kalendern om bredden ändras */
+            padding: 10px;  /* Lite extra utrymme runt kalendern */
+            box-sizing: border-box;  /* För att säkerställa att padding inte läggs till i bredden */
         }
 
         /* Justera iframe så att kalendern får tillräcklig höjd */
         .calendar-container iframe {
             border: 0;
             width: 100%;
-            height: 800px; /* Justera höjden här för att passa din layout */
+            height: 100vh;  /* Gör iframe-höjden responsiv (100% av höjden på webbläsarfönstret) */
         }
     </style>
 </head>
