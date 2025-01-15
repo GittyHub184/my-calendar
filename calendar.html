@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Kalender Veckovy</title>
+    <style>
+        /* Stil för kalenderns container */
+        .calendar-container {
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Justera iframe så att kalendern får tillräcklig höjd */
+        .calendar-container iframe {
+            border: 0;
+            width: 100%;
+            height: 800px; /* Justera höjden här för att passa din layout */
+        }
+    </style>
+</head>
+<body>
+    <h1>Veckovy från Google Kalender</h1>
+    <div class="calendar-container">
+        <iframe src="https://calendar.google.com/calendar/embed?src=osteraker.se_ekkf332giuuhcdr8t82nh7opc4@group.calendar.google.com&mode=week&bgcolor=%23ffffff&src=%23ff0000&ctz=Europe%2FStockholm" frameborder="0" scrolling="no"></iframe>
+    </div>
+</body>
+</html>
